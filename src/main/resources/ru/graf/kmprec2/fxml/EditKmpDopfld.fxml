@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import jfxtras.scene.layout.HBox?>
+<?import ru.inversion.fx.form.controls.JInvButton?>
+<?import ru.inversion.fx.form.controls.JInvCheckBox?>
+<?import ru.inversion.fx.form.controls.JInvLabel?>
+<?import ru.inversion.fx.form.controls.JInvLongField?>
+<?import ru.inversion.fx.form.controls.JInvTextField?>
+
+<VBox spacing="5.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.graf.kmprec2.EditKmpDopfldController">
+<children>
+<GridPane hgap="5.0" vgap="5.0" VBox.vgrow="ALWAYS">
+<children>
+<JInvLabel fx:id="lblCDOPFLDNAME" text="%CDOPFLDNAME" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+<JInvTextField fx:id="CDOPFLDNAME" fieldName="CDOPFLDNAME" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+<JInvLabel fx:id="lblCDOPFLDALIAS" text="%CDOPFLDALIAS" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+<JInvTextField fx:id="CDOPFLDALIAS" caseSensitiveMode="UPPER_CASE" fieldName="CDOPFLDALIAS" maxWidth="-Infinity" prefColumnCount="10" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <HBox spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <children>
+            <JInvCheckBox fx:id="IDOPFLDREQ_CH" contentDisplay="RIGHT" fieldName="IDOPFLDREQ_CH" text="%IDOPFLDREQ" />
+            <JInvCheckBox fx:id="IDOPFLDEDIT_CH" contentDisplay="RIGHT" fieldName="IDOPFLDEDIT_CH" text="%IDOPFLDEDIT" />
+            <JInvCheckBox fx:id="IDOPFLDENBL_CH" contentDisplay="RIGHT" fieldName="IDOPFLDENBL_CH" text="%IDOPFLDENBL" />
+            <JInvCheckBox fx:id="IDOPFLDACC_CH" contentDisplay="RIGHT" fieldName="IDOPFLDACC_CH" text="%IDOPFLDACC" />
+            <JInvCheckBox fx:id="IDOPFLDSAVE_CH" contentDisplay="RIGHT" fieldName="IDOPFLDSAVE_CH" text="%IDOPFLDSAVE" />
+        </children>
+    </HBox>
+
+<JInvLabel fx:id="lblCDOPFLDFMTSTR" text="%CDOPFLDFMTSTR" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+<JInvTextField fx:id="CDOPFLDFMTSTR" fieldName="CDOPFLDFMTSTR" maxWidth="-Infinity" prefColumnCount="20" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+<JInvLabel fx:id="lblIDOPFLDSHTIDX" text="%IDOPFLDSHTIDX" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+<JInvLongField fx:id="IDOPFLDSHTIDX" fieldName="IDOPFLDSHTIDX" maxWidth="-Infinity" prefColumnCount="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+<JInvLabel fx:id="lblIDOPFLDLNGTH" text="%IDOPFLDLNGTH" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+<JInvLongField fx:id="IDOPFLDLNGTH" fieldName="IDOPFLDLNGTH" maxWidth="-Infinity" prefColumnCount="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+</children>
+<columnConstraints>
+<ColumnConstraints halignment="RIGHT" />
+<ColumnConstraints hgrow="ALWAYS" />
+</columnConstraints>
+<VBox.margin>
+<Insets />
+</VBox.margin>
+<rowConstraints>
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints />
+<RowConstraints minHeight="1.0" />
+            <RowConstraints />
+</rowConstraints>
+</GridPane>
+<ButtonBar buttonMinWidth="80.0">
+<buttons>
+<JInvButton fx:id="btOK" />
+<JInvButton fx:id="btCancel" />
+</buttons>
+</ButtonBar>
+</children>
+<padding>
+<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+</padding>
+</VBox>

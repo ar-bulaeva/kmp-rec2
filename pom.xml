@@ -25,7 +25,7 @@
                             <mainClass>ru.graf.kmprec2.PKmpPolMain</mainClass>
                         </manifest>
                         <manifestEntries>
-                            <Class-Path>kmp-rec2.jar</Class-Path>
+                            <Class-Path>kmp-rec2.jar FXPdocparam.jar</Class-Path>
                         </manifestEntries>
                     </archive>
                 </configuration>
@@ -101,8 +101,19 @@
             <artifactId>javaee-api</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>ru.inversion</groupId>
+            <artifactId>FXPdoc</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.inversion</groupId>
+            <artifactId>FXPdocparam</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
-        <!--dependency>
+
+        <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>19</version>
@@ -112,7 +123,22 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>19</version>
-        </dependency-->
+        </dependency>
+        <dependency>
+            <groupId>com.dua3.fx</groupId>
+            <artifactId>fx-controls</artifactId>
+            <version>0.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>control</groupId>
+            <artifactId>control</artifactId>
+            <version>0.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.graf</groupId>
+            <artifactId>kmp-rec2</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 
@@ -131,6 +157,11 @@
                 <updatePolicy>daily</updatePolicy>
                 <checksumPolicy>warn</checksumPolicy>
             </releases>
+        </repository>
+        <repository>
+            <id>clojars</id>
+            <name>Clojars</name>
+            <url>https://repo.clojars.org/</url>
         </repository>
     </repositories>
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import ru.inversion.fx.form.controls.*?>
+<?import ru.inversion.fx.form.controls.dsbar.DSInfoBar?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="800.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.graf.kmprec2.ViewKmpDopfldController">
+<children>
+<JInvToolBar fx:id="toolBar" />
+<JInvTable fx:id="KMP_DOPFLD" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+<columns>
+<JInvTableColumn fx:id="CDOPFLDNAME" text="%CDOPFLDNAME" fieldName="CDOPFLDNAME"  />
+<JInvTableColumn fx:id="CDOPFLDALIAS" text="%CDOPFLDALIAS" fieldName="CDOPFLDALIAS"  />
+<JInvTableColumn fx:id="IDOPFLDREQ" text="%IDOPFLDREQ" fieldName="IDOPFLDREQ"  />
+<JInvTableColumn fx:id="IDOPFLDEDIT" text="%IDOPFLDEDIT" fieldName="IDOPFLDEDIT"  />
+<JInvTableColumn fx:id="IDOPFLDENBL" text="%IDOPFLDENBL" fieldName="IDOPFLDENBL"  />
+<JInvTableColumn fx:id="IDOPFLDACC" text="%IDOPFLDACC" fieldName="IDOPFLDACC"  />
+<JInvTableColumn fx:id="IDOPFLDSAVE" text="%IDOPFLDSAVE" fieldName="IDOPFLDSAVE"  />
+<JInvTableColumn fx:id="CDOPFLDFMTSTR" text="%CDOPFLDFMTSTR" fieldName="CDOPFLDFMTSTR"  />
+<JInvTableColumn fx:id="IDOPFLDSHTIDX" text="%IDOPFLDSHTIDX" fieldName="IDOPFLDSHTIDX"  />
+<JInvTableColumn fx:id="IDOPFLDLNGTH" text="%IDOPFLDLNGTH" fieldName="IDOPFLDLNGTH"  />
+</columns>
+<VBox.margin>
+<Insets bottom="5.0" left="5.0" right="5.0" />
+</VBox.margin>
+</JInvTable>
+</children>
+</VBox>

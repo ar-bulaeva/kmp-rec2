@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import jfxtras.scene.layout.GridPane?>
+<?import jfxtras.scene.layout.VBox?>
+<?import ru.inversion.fx.form.controls.JInvLabel?>
+<?import ru.inversion.fx.form.controls.JInvTable?>
+<?import ru.inversion.fx.form.controls.JInvTableColumn?>
+<?import ru.inversion.fx.form.controls.JInvTableColumnDate?>
+<?import ru.inversion.fx.form.controls.JInvTextField?>
+
+<VBox prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.graf.kmpaudit.ViewKmpAuditController">
+    <children>
+      <SplitPane dividerPositions="0.29797979797979796" VBox.vgrow="ALWAYS">
+        <items>
+          <AnchorPane VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" VBox.vgrow="ALWAYS">
+                     <children>
+                          <JInvTable fx:id="KMP_V_AU_TABLE_ACT" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+                              <columns>
+                                  <JInvTableColumnDate fx:id="DAU_TABLEDATE" fieldName="DAU_TABLEDATE" text="%DAU_TABLEDATE" />
+                                  <JInvTableColumn fx:id="CAU_TABLEUSR" fieldName="CAU_TABLEUSR" prefWidth="300.0" text="%CAU_TABLEUSR" />
+                                  <JInvTableColumn fx:id="CAU_TABLEACTION" fieldName="CAU_TABLEACTION" text="%CAU_TABLEACTION" />
+                              </columns>
+                          </JInvTable>
+                        <GridPane hgap="5.0" vgap="5.0">
+                           <children>
+                              <JInvTextField fx:id="CAU_TABLETBLNAME" editable="false" fieldName="CAU_TABLETBLNAME" maxWidth="-Infinity" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <JInvTextField fx:id="IAU_TABLEOBJID" editable="false" fieldName="IAU_TABLEOBJID" maxWidth="-Infinity" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <JInvLabel fx:id="lblIAU_TABLEOBJID" linkFieldName="" text="%IAU_TABLEOBJID" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <JInvLabel fx:id="lblCAU_TABLETBLNAME" text="%CAU_TABLETBLNAME" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                           <columnConstraints>
+                              <ColumnConstraints />
+                              <ColumnConstraints halignment="RIGHT" />
+                              <ColumnConstraints hgrow="ALWAYS" />
+                           </columnConstraints>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane>
+               <children>
+                    <JInvTable fx:id="KMP_AU_TABLE" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                        <columns>
+                            <JInvTableColumn fx:id="CAU_TABLEFLDNAME" fieldName="CAU_TABLEFLDNAME" text="%CAU_TABLEFLDNAME" />
+                            <JInvTableColumn fx:id="CAU_TABLEVAL" fieldName="CAU_TABLEVAL" prefWidth="300.0" text="%CAU_TABLEVAL" />
+                        </columns>
+                    </JInvTable>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</VBox>

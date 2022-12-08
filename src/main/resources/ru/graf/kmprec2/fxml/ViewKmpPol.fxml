@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import ru.inversion.bicomp.tablecolumn.JInvTableColumnAccountNum?>
+<?import ru.inversion.bicomp.tablecolumn.JInvTableColumnBiComp?>
+<?import ru.inversion.fx.form.controls.JInvLabel?>
+<?import ru.inversion.fx.form.controls.JInvTable?>
+<?import ru.inversion.fx.form.controls.JInvTableColumn?>
+<?import ru.inversion.fx.form.controls.JInvTableColumnBoolean?>
+<?import ru.inversion.fx.form.controls.JInvTableColumnDate?>
+<?import ru.inversion.fx.form.controls.JInvTableColumnMoney?>
+<?import ru.inversion.fx.form.controls.JInvTextField?>
+<?import ru.inversion.fx.form.controls.JInvToolBar?>
+
+<VBox prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.graf.kmprec2.ViewKmpPolController">
+    <children>
+        <JInvToolBar fx:id="toolBar" />
+          <AnchorPane>
+              <children>
+                  <JInvTable fx:id="KMP_POL" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                      <columns>
+                          <JInvTableColumn fx:id="IPOLIDPOL" fieldName="IPOLIDPOL" maxWidth="50.0" minWidth="40.0" prefWidth="40.0" text="%IPOLIDPOL" />
+                          <JInvTableColumnBiComp fx:id="CPOLMFO" fieldName="CPOLMFO" maxWidth="90.0" minWidth="80.0" prefWidth="80.0" text="%CPOLMFO" typeColumn="BIC" />
+                          <JInvTableColumnAccountNum fx:id="CPOLCORACC" fieldName="CPOLCORACC" maxWidth="170.0" minWidth="150.0" prefWidth="160.0" text="%CPOLCORACC" />
+                          <JInvTableColumnAccountNum fx:id="CPOLACCC" fieldName="CPOLACCC" maxWidth="200.0" minWidth="150.0" prefWidth="160.0" text="%CPOLACCC" />
+                          <JInvTableColumnAccountNum fx:id="CPOLACCD" fieldName="CPOLACCD" maxWidth="200.0" minWidth="150.0" prefWidth="180.0" text="%CPOLACCD" />
+                          <JInvTableColumnAccountNum fx:id="CPOLACCZ" fieldName="CPOLACCZ" maxWidth="250.0" minWidth="150.0" prefWidth="240.0" text="%CPOLACCZ" />
+                          <JInvTableColumn fx:id="CPOLCRINN" fieldName="CPOLCRINN" maxWidth="90.0" minWidth="80.0" prefWidth="80.0" text="%CPOLCRINN" />
+                          <JInvTableColumn fx:id="CPOLKPP" fieldName="CPOLKPP" maxWidth="90.0" minWidth="80.0" prefWidth="80.0" text="%CPOLKPP" />
+                          <JInvTableColumn fx:id="IPOLCOCODE" fieldName="IPOLCOCODE" maxWidth="90.0" minWidth="80.0" prefWidth="80.0" text="%IPOLCOCODE" />
+                          <JInvTableColumn fx:id="IPOLPRIORITY" fieldName="IPOLPRIORITY" maxWidth="90.0" minWidth="80.0" prefWidth="80.0" text="%IPOLPRIORITY" />
+                          <JInvTableColumn fx:id="IPOLVIDPLAT" fieldName="IPOLVIDPLAT" maxWidth="90.0" minWidth="80.0" prefWidth="80.0" text="%IPOLVIDPLAT" />
+                          <JInvTableColumn fx:id="IPOLOTD" fieldName="IPOLOTD" maxWidth="90.0" minWidth="80.0" prefWidth="80.0" text="%IPOLOTD" />
+                          <JInvTableColumnDate fx:id="DPOLOPEN" fieldName="DPOLOPEN" maxWidth="110.0" minWidth="80.0" prefWidth="100.0" text="%DPOLOPEN" />
+                          <JInvTableColumnBoolean fx:id="IPOLPERIODICAL_CH" alignment="CENTER" fieldName="IPOLPERIODICAL_CH" maxWidth="170.0" minWidth="90.0" prefWidth="170.0" text="%IPOLPERIODICAL" transientColumn="false" />
+                          <JInvTableColumnBoolean fx:id="IPOLACTIV_CH" alignment="CENTER" fieldName="IPOLACTIV_CH" maxWidth="90.0" minWidth="60.0" prefWidth="74.0" text="%IPOLACTIV" transientColumn="false" />
+                          <JInvTableColumnBoolean fx:id="IPOLRETAIL_CH" alignment="CENTER" fieldName="IPOLRETAIL_CH" maxWidth="140.0" minWidth="90.0" prefWidth="135.0" text="%IPOLRETAIL" transientColumn="false" />
+                          <JInvTableColumnBoolean fx:id="IPOLLEGAL_CH" alignment="CENTER" fieldName="IPOLLEGAL_CH" maxWidth="100.0" minWidth="90.0" prefWidth="95.0" text="%IPOLLEGAL" transientColumn="false" />
+                          <JInvTableColumnBoolean fx:id="IPOLONLINEPL_CH" alignment="CENTER" fieldName="IPOLONLINEPL_CH" maxWidth="100.0" minWidth="70.0" prefWidth="80.0" text="%IPOLONLINEPL" transientColumn="false" />
+                          <JInvTableColumn fx:id="CPOLDOGNUM" fieldName="CPOLDOGNUM" maxWidth="100.0" minWidth="90.0" prefWidth="90.0" text="%CPOLDOGNUM" />
+                          <JInvTableColumnDate fx:id="DPOLDOGDATE" fieldName="DPOLDOGDATE" maxWidth="100.0" minWidth="90.0" prefWidth="100.0" text="%DPOLDOGDATE" />
+                          <JInvTableColumn fx:id="IPOLUFTYPE" fieldName="IPOLUFTYPE" maxWidth="100.0" minWidth="90.0" prefWidth="100.0" text="%IPOLUFTYPE" />
+                          <JInvTableColumnMoney fx:id="MPOLMINSUM" fieldName="MPOLMINSUM" maxWidth="100.0" minWidth="90.0" prefWidth="100.0" text="%MPOLMINSUM" />
+                          <JInvTableColumn fx:id="IPOLONLINEVID" fieldName="IPOLONLINEVID" maxWidth="110.0" minWidth="90.0" prefWidth="110.0" text="%IPOLONLINEVID" />
+                          <JInvTableColumnBoolean fx:id="IPOLACTIVE_CH" alignment="CENTER" fieldName="IPOLACTIVE_CH" maxWidth="100.0" minWidth="9.0" prefWidth="74.0" text="%IPOLACTIVE" transientColumn="false" />
+                      </columns>
+                  </JInvTable>
+              </children>
+          </AnchorPane>
+          <ScrollPane fitToHeight="true" fitToWidth="true">
+              <content>
+            <GridPane hgap="5.0" vgap="5.0">
+                  <children>
+                      <JInvLabel linkFieldName="CPOLNAME" text="%CPOLNAME" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                      <JInvTextField fx:id="CPOLNAME" editable="false" fieldName="CPOLNAME" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                      <JInvLabel linkFieldName="CPOLNAMEPLAT" text="%CPOLNAMEPLAT" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                      <JInvTextField fx:id="CPOLNAMEPLAT" editable="false" fieldName="CPOLNAMEPLAT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                      <JInvLabel linkFieldName="CPOLPURPUSE" text="%CPOLPURPUSE" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                      <JInvTextField fx:id="CPOLPURPUSE" editable="false" fieldName="CPOLPURPUSE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                      <JInvLabel linkFieldName="IPOLTYPEKOM" text="%IPOLTYPEKOM" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                      <JInvTextField fx:id="IPOLTYPEKOM_D" editable="false" fieldName="IPOLTYPEKOM_D" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                      <JInvLabel linkFieldName="ID" text="%ID" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                      <JInvTextField fx:id="ID" editable="false" fieldName="ID" style="-fx-max-width: 50px;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                      <JInvTextField fx:id="CNAME" editable="false" fieldName="CNAME" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                          <GridPane.margin>
+                              <Insets left="55.0" />
+                          </GridPane.margin>
+                  </JInvTextField>
+                      <JInvLabel linkFieldName="IGRPID" text="%IGRPID" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                      <JInvTextField fx:id="IGRPID" editable="false" fieldName="IGRPID" style="-fx-max-width: 50px;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                      <JInvTextField fx:id="CGRPNAME" editable="false" fieldName="CGRPNAME" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                          <GridPane.margin>
+                              <Insets left="55.0" />
+                          </GridPane.margin>
+                  </JInvTextField>
+                      <JInvLabel linkFieldName="ISHTID" text="%ISHTID" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                      <JInvTextField fx:id="ISHTID" editable="false" fieldName="ISHTID" style="-fx-max-width: 50px;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                      <JInvTextField fx:id="CSHTCMT" editable="false" fieldName="CSHTCMT" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                          <GridPane.margin>
+                              <Insets left="55.0" />
+                          </GridPane.margin>
+                  </JInvTextField>
+                      <JInvLabel linkFieldName="CPOLNOTE" text="%CPOLNOTE" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                      <JInvTextField fx:id="CPOLNOTE" editable="false" fieldName="CPOLNOTE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  </children>
+                  <columnConstraints>
+                      <ColumnConstraints />
+                      <ColumnConstraints hgrow="ALWAYS" />
+                  </columnConstraints>
+                  <rowConstraints>
+                      <RowConstraints />
+                      <RowConstraints />
+                      <RowConstraints />
+                      <RowConstraints />
+                      <RowConstraints />
+                      <RowConstraints />
+                      <RowConstraints />
+                      <RowConstraints />
+                      <RowConstraints />
+                  </rowConstraints>
+              </GridPane>
+              </content>
+              <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+              </padding>
+          </ScrollPane>
+          <TabPane tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                  <Tab text="%T.TAB1">
+                      <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0">
+                              <children>
+                                  <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <children>
+                                          <JInvToolBar fx:id="toolBar_dopfld">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </JInvToolBar>
+                                          <JInvTable fx:id="KMP_DOPFLD" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+                                              <columns>
+                                                  <JInvTableColumn fx:id="CDOPFLDNAME" fieldName="CDOPFLDNAME" text="%CDOPFLDNAME" />
+                                                  <JInvTableColumn fx:id="CDOPFLDALIAS" fieldName="CDOPFLDALIAS" text="%CDOPFLDALIAS" />
+                                                  <JInvTableColumnBoolean fx:id="IDOPFLDREQ_CH" alignment="CENTER" fieldName="IDOPFLDREQ_CH" maxWidth="170.0" minWidth="90.0" prefWidth="170.0" text="%IDOPFLDREQ" transientColumn="false" />
+                                                  <JInvTableColumnBoolean fx:id="IDOPFLDEDIT_CH" alignment="CENTER" fieldName="IDOPFLDEDIT_CH" maxWidth="170.0" minWidth="90.0" prefWidth="170.0" text="%IDOPFLDEDIT" transientColumn="false" />
+                                                  <JInvTableColumnBoolean fx:id="IDOPFLDENBL_CH" alignment="CENTER" fieldName="IDOPFLDENBL_CH" maxWidth="170.0" minWidth="90.0" prefWidth="170.0" text="%IDOPFLDENBL" transientColumn="false" />
+                                                  <JInvTableColumnBoolean fx:id="IDOPFLDACC_CH" alignment="CENTER" fieldName="IDOPFLDACC_CH" maxWidth="170.0" minWidth="90.0" prefWidth="170.0" text="%IDOPFLDACC" transientColumn="false" />
+                                                  <JInvTableColumnBoolean fx:id="IDOPFLDSAVE_CH" alignment="CENTER" fieldName="IDOPFLDSAVE_CH" maxWidth="170.0" minWidth="90.0" prefWidth="170.0" text="%IDOPFLDSAVE" transientColumn="false" />
+                                                  <JInvTableColumn fx:id="CDOPFLDFMTSTR" fieldName="CDOPFLDFMTSTR" text="%CDOPFLDFMTSTR" />
+                                                  <JInvTableColumn fx:id="IDOPFLDSHTIDX" fieldName="IDOPFLDSHTIDX" text="%IDOPFLDSHTIDX" />
+                                                  <JInvTableColumn fx:id="IDOPFLDLNGTH" fieldName="IDOPFLDLNGTH" text="%IDOPFLDLNGTH" />
+                                              </columns>
+                                              <VBox.margin>
+                                                  <Insets bottom="5.0" left="5.0" right="5.0" />
+                                              </VBox.margin>
+                                          </JInvTable>
+                                      </children>
+                                  </VBox>
+                              </children>
+                          </AnchorPane>
+                      </content>
+                  </Tab>
+                  <Tab text="%T.TAB2">
+                      <content>
+                  <AnchorPane>
+                     <children>
+                        <GridPane hgap="5.0" vgap="5.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="644.0" minWidth="10.0" prefWidth="240.0" />
+                              <ColumnConstraints maxWidth="683.0" minWidth="154.0" prefWidth="591.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                           <children>
+                                    <JInvLabel linkFieldName="IPOLNADP" text="%IPOLNADP" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <JInvTextField fx:id="IPOLNADP" fieldName="IPOLNADP" maxWidth="50.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <JInvTextField fx:id="NADP_NAME" fieldName="NADP_NAME" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="55.0" />
+                                 </GridPane.margin>
+                              </JInvTextField>
+                                    <JInvLabel linkFieldName="IPOLREPID" text="%IPOLREPID" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <JInvTextField fx:id="IPOLREPID" fieldName="IPOLREPID" maxWidth="50.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <JInvTextField fx:id="REPORT_NAME" fieldName="REPORT_NAME" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="55.0" />
+                                 </GridPane.margin>
+                              </JInvTextField>
+                                    <JInvLabel linkFieldName="CPOLFILENAME" text="%CPOLFILENAME" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                              <HBox spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                          <JInvTextField fx:id="CPOLFILENAME" fieldName="CPOLFILENAME" HBox.hgrow="ALWAYS" />
+                                          <JInvTextField fx:id="IPOLPRINT_FILE_D" fieldName="IPOLPRINT_FILE_D" />
+                                 </children>
+                              </HBox>
+                                    <JInvLabel linkFieldName="CPOLDBFFILENAME" text="%CPOLDBFFILENAME" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                                    <JInvTextField fx:id="CPOLDBFFILENAME" fieldName="CPOLDBFFILENAME" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+                      </content>
+                  </Tab>
+              </tabs>
+          </TabPane>
+    </children>
+</VBox>
